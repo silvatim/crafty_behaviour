@@ -5,6 +5,11 @@ class BreweriesController < ApplicationController
   # GET /breweries.json
   def index
     @breweries = Brewery.all
+    @hash = Gmaps4rails.build_markers(@breweries) do |brewery, marker|
+      marker.lat brewery.latitude
+      marker.lng brewery.longitude
+      marker.infowindow brewery.description
+   end
   end
 
   # GET /breweries/1

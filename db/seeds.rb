@@ -26,7 +26,7 @@ br3 = Brewery.create({
 
 br4 = Brewery.create({
   brewery_name: "Young Henrys",
-  address: " D & E/76 Wilford St, Newtown NSW 2042",
+  address: "76 Wilford St, Newtown NSW 2042",
   image: "http://www.honeyrogue.com/i/folio/brand-newtowner-1.jpg",
   description: "Meeting on opposite sides of the bar, Richard Adamson and Oscar McMahon got talking. It turned out they both shared a love of beer and a view that the Sydney beer scene was behind the times. It should, they thought, be more adventurous, innovative and fun. Since Richard knew how to brew and Oscar knew all the ins and outs of hospitality, they figured they could do more than just talk.",
   website: "http://www.younghenrys.com/"

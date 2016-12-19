@@ -23,7 +23,7 @@
         <td><%= brewery.address %></td>
         <td><%= brewery.longitude %></td>
         <td><%= brewery.latitude %></td>
-        <td><%= brewery.image %></td>
+        <td><%= image_tag(brewery.image) %></td>
         <td><%= brewery.description %></td>
         <td><%= brewery.website %></td>
         <td><%= link_to 'Show', brewery %></td>
@@ -37,3 +37,16 @@
 <br>
 
 <%= link_to 'New Brewery', new_brewery_path %>
+
+<div style='width: 800px;'>
+    <div id="map" style='width: 800px; height: 400px;'></div>
+</div>
+
+<script type="text/javascript">
+    handler = Gmaps.build('Google');
+    handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers(<%=raw @hash.to_json %>);
+    handles.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
+</script>
