@@ -1,0 +1,1 @@
+json.partial! "tour_sessions/tour_session", tour_session: @tour_session

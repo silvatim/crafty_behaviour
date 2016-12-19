@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tour_date: 2016-12-19 11:59:44
+  tour_id: 1
+  number_booked: 1
+
+two:
+  tour_date: 2016-12-19 11:59:44
+  tour_id: 1
+  number_booked: 1
