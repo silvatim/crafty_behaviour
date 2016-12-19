@@ -12,12 +12,12 @@
 
 <p>
   <strong>Long:</strong>
-  <%= @brewery.long %>
+  <%= @brewery.longitude %>
 </p>
 
 <p>
   <strong>Lat:</strong>
-  <%= @brewery.lat %>
+  <%= @brewery.latitude %>
 </p>
 
 <p>
@@ -34,6 +34,9 @@
   <strong>Website:</strong>
   <%= @brewery.website %>
 </p>
+<div style='width: 800px;'>
+    <div id="map" style='width: 800px; height: 400px;'></div>
+</div>
 
 <%= link_to 'Edit', edit_brewery_path(@brewery) %> |
 <%= link_to 'Back', breweries_path %>
