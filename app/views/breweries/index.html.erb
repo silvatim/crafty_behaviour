@@ -23,7 +23,7 @@
         <td><%= brewery.address %></td>
         <td><%= brewery.longitude %></td>
         <td><%= brewery.latitude %></td>
-        <td><%= image_tag(brewery.image) %></td>
+        <td><%= image_tag(brewery.image, :class => "brewpics") %></td>
         <td><%= brewery.description %></td>
         <td><%= brewery.website %></td>
         <td><%= link_to 'Show', brewery %></td>
@@ -37,3 +37,5 @@
 <br>
 
 <%= link_to 'New Brewery', new_brewery_path %>
+
+<%= render 'map' %>

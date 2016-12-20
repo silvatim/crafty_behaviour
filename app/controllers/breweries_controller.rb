@@ -5,6 +5,16 @@ class BreweriesController < ApplicationController
   # GET /breweries.json
   def index
     @breweries = Brewery.all
+    @hash = Gmaps4rails.build_markers(@breweries) do |brewery, marker|
+      marker.lat brewery.latitude
+      marker.lng brewery.longitude
+      # marker.picture({
+      # :url => view_context.image_path('/assets/images/beer.png'), #view_context.image_path(
+      # :width => 32,
+      # :height => 32
+      # })
+      marker.infowindow render_to_string( :partial => 'infowindow', locals:{ brewery: brewery } )
+   end
   end
 
   # GET /breweries/1
