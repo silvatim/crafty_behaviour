@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :tours
   resources :breweries
   resources :bookings
+  resources :charges
 
   get "/app" => 'pages#app'
 
