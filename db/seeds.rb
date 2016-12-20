@@ -2,7 +2,7 @@ Brewery.destroy_all
 
 br1 = Brewery.create({
   brewery_name: "Wayward Brewing Co",
-  address: "1 Gehrig Ln, Camperdown NSW 2050",
+  address: "1 Gehrig Ln, Annandale NSW 2038",
   image: "http://dnawpvd8dl079.cloudfront.net/image/WaywardBrewing.jpg",
   description: "Wayward's founder, Peter Philip, came to own Wayward through a decade-long love affair with home brewing and he still considers himself a homebrewer at heart. His wayward ethos comes from an insatiable wanderlust and love of travel, particularly beer pilgrimages through Europe an other places with rich brewing traditions. He loves the idea of beers that you can only find in one place, beer worth travelling for.",
   website: "http://www.waywardbrewing.com.au/"
@@ -18,7 +18,7 @@ br2 = Brewery.create({
 
 br3 = Brewery.create({
   brewery_name: "Willie The Boatman",
-  address: "202/75 Mary St, St Peters NSW 2044",
+  address: "75 Mary St, St Peters NSW 2044",
   image: "http://www.fablecraft.com.au/wp-content/uploads/2014/02/fablecraft_willie_the_boatman_beer_76.jpg",
   description: "Having met on the school run many moons ago, Nick Newey and Pat McInerney bonded over a mutual love of fishing and boating, which eventually led the pair to tinkering in homebrewing together. After years of experimentation, and with neither satisfied in their 9-5, they decided to turn their passion into profession. And so, Willie the Boatman was born.",
   website: "http://www.willietheboatman.com/"
@@ -26,7 +26,7 @@ br3 = Brewery.create({
 
 br4 = Brewery.create({
   brewery_name: "Young Henrys",
-  address: " D & E/76 Wilford St, Newtown NSW 2042",
+  address: "76 Wilford St, Newtown NSW 2042",
   image: "http://www.honeyrogue.com/i/folio/brand-newtowner-1.jpg",
   description: "Meeting on opposite sides of the bar, Richard Adamson and Oscar McMahon got talking. It turned out they both shared a love of beer and a view that the Sydney beer scene was behind the times. It should, they thought, be more adventurous, innovative and fun. Since Richard knew how to brew and Oscar knew all the ins and outs of hospitality, they figured they could do more than just talk.",
   website: "http://www.younghenrys.com/"
@@ -59,6 +59,9 @@ t4 = Tour.create({
   num_capacity: 15
   })
 
+t1.breweries << br1 << br2 << br3 << br4
+
+puts "Tour one Brewery count: #{t1.breweries.count}"
 
 TourSession.destroy_all
 
@@ -95,7 +98,7 @@ b1 = Booking.create({
     name_first: "Tim",
     date: Time.now,
     number_people: 5,
-    session_id: s1.id
+    tour_session_id: s1.id
   })
 
 b2 = Booking.create({
@@ -103,7 +106,7 @@ b2 = Booking.create({
     name_first: "James",
     date: Time.now,
     number_people: 3,
-    session_id: s2.id
+    tour_session_id: s2.id
   })
 
 b3 = Booking.create({
@@ -111,7 +114,7 @@ b3 = Booking.create({
     name_first: "Ewelina",
     date: Time.now,
     number_people: 7,
-    session_id: s3.id
+    tour_session_id: s3.id
   })
 
 b4 = Booking.create({
@@ -119,5 +122,5 @@ b4 = Booking.create({
     name_first: "Mario",
     date: Time.now,
     number_people: 2,
-    session_id: s4.id
+    tour_session_id: s4.id
   })

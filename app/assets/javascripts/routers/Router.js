@@ -10,12 +10,15 @@ app.Router = Backbone.Router.extend({
   },
 
   initializeApp: function() {
-    var appView = new app.AppView({
-      collection: app.breweries
-    });
+    var appView = new app.AppView();
     appView.render();
+
   },
 
-  
+showMapView: function (id){
+
+  console.log(id);
+}
+
 
 });

@@ -2,6 +2,7 @@ var app = app || {};
 
 app.Brewery = Backbone.Model.extend({
   urlRoot: "/breweries",
+  
   defaults:{
     brewery_name: "",
     address: "",
@@ -13,7 +14,7 @@ app.Brewery = Backbone.Model.extend({
   },
 
   initialize: function (){
-    console.log( "A new brewery was created" );
+    console.log( "A new brewery is created" );
   }
 });
 
