@@ -38,8 +38,8 @@
 
 <%= link_to 'New Brewery', new_brewery_path %>
 
-<div style='width: 800px;'>
-    <div id="map" style='width: 1000px; height: 800px;'></div>
+<div style='height: 400px;'>
+    <div id="map" style='height: 100%; width: 100%'></div>
 </div>
 
 <script type="text/javascript">
@@ -73,7 +73,7 @@
 // }
 
     var handler = Gmaps.build('Google');
-    handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    var map = handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
     markers = handler.addMarkers(<%=raw @hash.to_json %>);
     handler.bounds.extendWith(markers);
     handler.fitMapToBounds();
