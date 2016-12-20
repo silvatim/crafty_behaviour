@@ -2,7 +2,7 @@ Brewery.destroy_all
 
 br1 = Brewery.create({
   brewery_name: "Wayward Brewing Co",
-  address: "1 Gehrig Ln, Camperdown NSW 2050",
+  address: "1 Gehrig Ln, Annadale NSW 2038",
   image: "http://dnawpvd8dl079.cloudfront.net/image/WaywardBrewing.jpg",
   description: "Wayward's founder, Peter Philip, came to own Wayward through a decade-long love affair with home brewing and he still considers himself a homebrewer at heart. His wayward ethos comes from an insatiable wanderlust and love of travel, particularly beer pilgrimages through Europe an other places with rich brewing traditions. He loves the idea of beers that you can only find in one place, beer worth travelling for.",
   website: "http://www.waywardbrewing.com.au/"
@@ -18,7 +18,7 @@ br2 = Brewery.create({
 
 br3 = Brewery.create({
   brewery_name: "Willie The Boatman",
-  address: "202/75 Mary St, St Peters NSW 2044",
+  address: "75 Mary St, St Peters NSW 2044",
   image: "http://www.fablecraft.com.au/wp-content/uploads/2014/02/fablecraft_willie_the_boatman_beer_76.jpg",
   description: "Having met on the school run many moons ago, Nick Newey and Pat McInerney bonded over a mutual love of fishing and boating, which eventually led the pair to tinkering in homebrewing together. After years of experimentation, and with neither satisfied in their 9-5, they decided to turn their passion into profession. And so, Willie the Boatman was born.",
   website: "http://www.willietheboatman.com/"
