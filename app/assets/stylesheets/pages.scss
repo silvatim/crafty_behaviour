@@ -1,5 +1,6 @@
 body {
-  overflow: hidden;
+  // overflow: hidden;
+  list-style: none;
 }
 
 #app {
@@ -10,14 +11,6 @@ body {
   overflow: auto;
 }
 
-h1 {
-  text-align: center;
-  font-size: 15px;
-}
-
-button {
-  font-size: 15px;
-}
 
 // CSS for backbone Views
 #map {
@@ -26,6 +19,7 @@ border: 1px solid black;
 height: 100%;
 width: 60%;
 float: right;
+border-radius: 50%;
 }
 
 #breweryIndexView {
