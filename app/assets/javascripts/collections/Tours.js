@@ -1,11 +1,12 @@
 var app = app || {};
 
-app.Breweries = Backbone.Collection.extend({
-  url: "/breweries",
+app.Tours = Backbone.Collection.extend({
+  url: "/tours",
 
-  model: app.Tours,
+  model: app.Tour,
 
   initialize: function () {
     console.log("A new collection of tours was created");
+
   }
 });
