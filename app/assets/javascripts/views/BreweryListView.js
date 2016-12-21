@@ -11,12 +11,12 @@ app.BreweryListView = Backbone.View.extend({
     var maplat  = brewery.latitude;
     var maplong = brewery.longitude;
 
-    this.$el.text(name);
+   // this.$el.text(name);
     this.$el.prependTo("#mapView");
 
-    // this.$el.text(maplat);
+     this.$el.text(maplat+", "+maplong);
     // this.$el.prependTo("#mapView");
-    // this.$el.text(maplong);
+   //  this.$el.text(maplong);
     // this.$el.prependTo("#mapView");
     // this.model.attributes.breweries === an array of all the associated bookings
     // 1. create a template (in script tags in app.html.erb) for a single, list-item style brewery
