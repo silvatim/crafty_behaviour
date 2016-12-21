@@ -1,12 +1,14 @@
 
 .wrapper {
-  padding-top: 250px;
+  padding-top: 240px;
   font-family: "Montserrat";
   text-align: center;
+  color: #232323; // almost black
 }
 
 .wrapper h1 {
   font-weight: bold;
+  font-size: 4em;
 }
 
 #container div { position: absolute; }
