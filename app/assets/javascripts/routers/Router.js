@@ -13,12 +13,12 @@ app.Router = Backbone.Router.extend({
     var appView = new app.AppView();
     appView.render();
 
-  },
+    _.each(app.tours.models, function(tour) {
+      var tourView = new app.TourListView({
+        model: tour
+      });
+      tourView.render();
+    });
 
-showMapView: function (id){
-
-  console.log(id);
-}
-
-
+  }
 });

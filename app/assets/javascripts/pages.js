@@ -6,8 +6,9 @@ if($("#app").length === 0){
   return false;
 }
 
-  app.breweries = new app.Breweries();
-  app.breweries.fetch().done(function(){
+
+  app.tours = new app.Tours();
+  app.tours.fetch().done(function(){
 
     app.router = new app.Router();
     Backbone.history.start();

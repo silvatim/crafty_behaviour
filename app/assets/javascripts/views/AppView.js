@@ -3,10 +3,12 @@ var app = app || {};
 app.AppView = Backbone.View.extend({
   el: "#app",
   render: function(){
+
     var mapView = $("#mapViewTemplate").html();
     this.$el.html(mapView);
-
-    var kvt = new app.keyViewTemplate();
-    kvt.render();
+    var tourView = $("#keyViewTemplate").html();
+    this.$el.prepend(tourView);
+    var sessionView = $("#tourDateTemplate").html();
+    this.$el.prepend(sessionView);
   }
 });
