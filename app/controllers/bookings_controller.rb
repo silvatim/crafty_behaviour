@@ -25,6 +25,7 @@ class BookingsController < ApplicationController
   # POST /bookings.json
   def create
     @booking = Booking.new(booking_params)
+    # Amount in cents
 
     respond_to do |format|
       if @booking.save
