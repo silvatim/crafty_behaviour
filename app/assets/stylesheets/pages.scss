@@ -1,27 +1,13 @@
+body {
+  overflow: hidden;
+}
+
 #app {
-  text-align: center;
-  font-size: 15px;
+  height: 100vh;
+  width: 100vw;
   border: 1px solid black;
-}
-
-#mapView {
-  border: 1px dashed green;
-  width: 300px;
-  height: 300px;
-  margin-left: 200px;
-  margin-bottom: 300px;
-}
-
-#tourList {
-  border: 1px dashed blue;
-  width: 150px;
-  // margin-left: 200px;
-}
-
-#tourSessions {
-  border: 1px dashed red;
-  width: 400px;
-  margin-left: 200px;
+  background-color: lightslategrey;
+  overflow: auto;
 }
 
 h1 {
@@ -30,15 +16,41 @@ h1 {
 }
 
 button {
-  text-align: center;
   font-size: 15px;
-  margin-left: 350px;
 }
 
-#home {
-height: 100vh;
-width: 100vw;
-background-image: url("http://breweryartwalk.com/sites/default/files/webimages/smoke_stack.png");
-background-repeat: no-repeat;
-background-size: cover;
+// CSS for backbone Views
+#map {
+display: block;
+border: 1px solid black;
+height: 100%;
+width: 60%;
+float: right;
+}
+
+#breweryIndexView {
+  display: inline-block;
+  border: 1px dashed black;
+  width: 200px;
+  height: 200px;
+  margin-top: 10%;
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+}
+
+#tourList {
+  display: inline-block;
+  border: 1px dashed black;
+  width: 200px;
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+}
+
+#tourSessions {
+  display: inline-block;
+  border: 1px dashed red;
+  width: 200px;
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+
 }

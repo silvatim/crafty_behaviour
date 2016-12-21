@@ -38,6 +38,11 @@ app.TourListView = Backbone.View.extend({
       breweryView.render();
     });
 
+    // TODO: we need to render a single mapView for this tour. We need to send that view the details of each brewery in this tour. Probably want to remove mapView stuff from BreweryListView.js
+    var GmapView = new app.MapView({
+      breweries: tour.breweries
+    });
+    // GmapView.render();
 
   },
 });
