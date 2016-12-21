@@ -10,6 +10,7 @@ class BookingsController < ApplicationController
   # GET /bookings/1
   # GET /bookings/1.json
   def show
+    flash[:booking_id] = @booking.id
   end
 
   # GET /bookings/new
@@ -29,7 +30,7 @@ class BookingsController < ApplicationController
 
     respond_to do |format|
       if @booking.save
-        format.html { redirect_to @booking, notice: 'Booking was successfully created.' }
+        format.html { redirect_to @booking, notice: 'Please make a payment to confirm your booking.' }
         format.json { render :show, status: :created, location: @booking }
       else
         format.html { render :new }

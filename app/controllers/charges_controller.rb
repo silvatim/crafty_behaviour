@@ -20,6 +20,9 @@ class ChargesController < ApplicationController
       :currency    => 'usd'
     )
 
+    @booking = Booking.find(flash[:booking_id])
+    @booking.confirmed = true
+    @booking.save
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
