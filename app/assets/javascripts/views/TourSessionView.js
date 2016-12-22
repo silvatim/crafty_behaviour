@@ -10,11 +10,11 @@ app.TourSessionView = Backbone.View.extend({
         var tour_name = tour.attributes.tour_name;
         var tour_session = this.model;
         // console.log(content.tour_name);
-        var date = tour_session.tour_date;
+        var date = moment(tour_session.tour_date).format('Do MMM YYYY');
         // console.log(dates.tour_date);
 
         this.$el.text(tour_name + ": " + date);
-        this.$el.prependTo("#tourSessions");
+        this.$el.appendTo("#tourSessions");
 
 
 
