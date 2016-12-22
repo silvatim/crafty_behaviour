@@ -20,13 +20,15 @@ app.MapView = Backbone.View.extend({
         });
 
         var image_marker = {
+            
             url: 'https://i.gyazo.com/thumb/200/_eb58c8d0345b271c2da891461944b6cb-png.jpg',
+
             //   //        // This marker is 20 pixels wide by 32 pixels high.
-            size: new google.maps.Size(20, 32),
+            size: new google.maps.Size(20, 37),
             //   //        // The origin for this image is (0, 0).
             origin: new google.maps.Point(0, 0),
             //   //        // The anchor for this image is the base of the flagpole at (0, 32).
-            anchor: new google.maps.Point(0, 32)
+            anchor: new google.maps.Point(0, 37)
         };
         //       // Shapes define the clickable region of the icon. The type defines an HTML
         //       // <area> element 'poly' which traces out a polygon as a series of X,Y points.
