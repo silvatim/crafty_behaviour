@@ -1,8 +1,12 @@
 // ------- sticky footer  ----------- //
 .main {
-    min-height: calc(100vh - 240px);
+    min-height: calc(100vh - 200px);
 }
 
+.rabbit {
+  width: 300px;
+  padding-top: 20px;
+}
 // ----------------            ------------------  //
 .wrapper {
     font-family: "Montserrat";
@@ -15,6 +19,7 @@
   font-weight: bold;
   font-size: 4em;
 }
+
 
 
 // ----------- bubbles ------------------- //
