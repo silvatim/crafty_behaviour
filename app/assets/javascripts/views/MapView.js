@@ -3,7 +3,6 @@ var app = app || {};
 app.MapView = Backbone.View.extend({
     el: "#map",
 
-
     initialize: function(options) {
         // var map = {};
         var breweries = options.breweries;

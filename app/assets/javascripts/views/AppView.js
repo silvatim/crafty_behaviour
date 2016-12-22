@@ -10,13 +10,13 @@ app.AppView = Backbone.View.extend({
     this.$el.append(tourView);
     var mapView = $("#mapViewTemplate").html();
     this.$el.append(mapView);
-
+    var sessionView = $("#tourDateTemplate").html();
+    this.$el.append(sessionView);
 
     var GmapView = $("#GmapView").html();
     this.$el.append(GmapView);
 
-    var sessionView = $("#tourDateTemplate").html();
-    this.$el.append(sessionView);
+
 
   }
 
