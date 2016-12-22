@@ -176,6 +176,53 @@ s4 = TourSession.create({
   number_booked: 0
   })
 
+s5 = TourSession.create({
+  tour_date: Time.now + 20.days,
+  tour_id: t1.id,
+  number_booked: 0
+  })
+
+s6 = TourSession.create({
+  tour_date: Time.now + 22.days,
+  tour_id: t2.id,
+  number_booked: 0
+  })
+
+s7 = TourSession.create({
+  tour_date: Time.now + 24.days,
+  tour_id: t3.id,
+  number_booked: 0
+  })
+
+s8 = TourSession.create({
+  tour_date: Time.now + 26.days,
+  tour_id: t4.id,
+  number_booked: 0
+  })
+
+s9 = TourSession.create({
+  tour_date: Time.now + 30.days,
+  tour_id: t1.id,
+  number_booked: 0
+  })
+
+s10 = TourSession.create({
+  tour_date: Time.now + 33.days,
+  tour_id: t2.id,
+  number_booked: 0
+  })
+
+s11 = TourSession.create({
+  tour_date: Time.now + 36.days,
+  tour_id: t3.id,
+  number_booked: 0
+  })
+
+s12 = TourSession.create({
+  tour_date: Time.now + 39.days,
+  tour_id: t4.id,
+  number_booked: 0
+  })
 
 
 Booking.destroy_all
