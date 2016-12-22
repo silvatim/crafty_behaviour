@@ -20,13 +20,13 @@ app.MapView = Backbone.View.extend({
         });
 
         var image_marker = {
-            url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+            url: 'https://i.gyazo.com/c7acbbd4ab4d6e1574f5c2b0816762c3.png',
             //   //        // This marker is 20 pixels wide by 32 pixels high.
-            size: new google.maps.Size(20, 32),
+            size: new google.maps.Size(20, 37),
             //   //        // The origin for this image is (0, 0).
             origin: new google.maps.Point(0, 0),
             //   //        // The anchor for this image is the base of the flagpole at (0, 32).
-            anchor: new google.maps.Point(0, 32)
+            anchor: new google.maps.Point(0, 37)
         };
         //       // Shapes define the clickable region of the icon. The type defines an HTML
         //       // <area> element 'poly' which traces out a polygon as a series of X,Y points.
