@@ -1,57 +1,41 @@
-body {
-  // overflow: hidden;
-  list-style: none;
-}
+* { box-sizing: border-box; }
 
-.wrapper2 {
-  padding-top: 200px;
-  font-family: "Montserrat";
-  text-align: center;
-  color: #232323; // almost black
-}
+
+// ---------------  CSS for backbone Views  ---------------  //
 
 #app {
   height: 100vh;
-  width: 100vw;
-  border: 1px solid black;
-  // background-color: lightslategrey;
-  overflow: auto;
+  width: 100%;
+  list-style: none;
+  font-size: 1.2em;
 }
 
 
-// CSS for backbone Views
+// #app li {
+//   border: 1px solid red;
+// }
+
 #map {
 display: block;
-border: 1px solid black;
-height: 100%;
-width: 50%;
-float: right;
-border-radius: 5%;
+height: 50%;
+width: 100%;
+}
+
+#breweryIndexView,
+#tourList,
+#tourSessions {
+  display: block;
+  border: 1px solid red;
+  min-height: 160px;
+}
+
+
+#tourList {
+  float: left;
+  width: 50%;
 }
 
 #breweryIndexView {
-  display: inline-block;
-  border: 1px dashed black;
-  width: 200px;
-  height: 200px;
-  margin-top: 10%;
-  color: white;
-  background-color: rgba(0,0,0,0.4);
-}
-
-#tourList {
-  display: inline-block;
-  border: 1px dashed black;
-  width: 200px;
-  color: white;
-  background-color: rgba(0,0,0,0.4);
-}
-
-#tourSessions {
-  display: inline-block;
-  border: 1px dashed red;
-  width: 200px;
-  color: white;
-  background-color: rgba(0,0,0,0.4);
-
+  float: right;
+  width: 50%;
 }
