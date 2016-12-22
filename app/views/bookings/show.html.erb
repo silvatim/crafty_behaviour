@@ -1,6 +1,8 @@
 
 <div class="main">
   <div class="wrapper">
+    <img class="rabbit" src="https://raw.githubusercontent.com/sporto/hop/master/assets/logo.png"
+
 
     <p id="notice"><%= notice %></p>
 
@@ -21,19 +23,19 @@
 
         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                data-description="A month's subscription"
+                data-description="Crafty Beer Tours"
                 data-amount="500"
                 data-locale="auto"></script>
       <% end %>
     <% end %>
 
     <p>
-      <strong>Name last:</strong>
+      <strong>Last Name:</strong>
       <%= @booking.name_last %>
     </p>
 
     <p>
-      <strong>Name first:</strong>
+      <strong>First Name:</strong>
       <%= @booking.name_first %>
     </p>
 
