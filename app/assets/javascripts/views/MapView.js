@@ -68,7 +68,6 @@ app.MapView = Backbone.View.extend({
             google.maps.event.addListener(marker, 'mouseover', (function(marker) {
                 return function() {
                     var content = "<h2>" + brewery_name + " </h2><img class='brewpics' src=" + image + "><p>" + description + "</p><p>" + website + " </p>";
-                    console.log(content);
                     infoWindow.setContent(content);
                     infoWindow.open(map, marker);
                 };

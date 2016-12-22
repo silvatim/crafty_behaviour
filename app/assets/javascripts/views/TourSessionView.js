@@ -5,9 +5,9 @@ app.TourSessionView = Backbone.View.extend({
 
 
     render: function() {
-        var $tourSessionsHeading = $("<p>Tour Dates</p>");
+        var $tourSessionsHeading = $("<p>Tour Dates:</p>");
         $("#tourSessions p").remove();
-        $("#tourSessions").append($tourSessionsHeading);
+        $("#tourSessions").prepend($tourSessionsHeading);
         var tour = app.tours.get(this.model.tour_id);
         var tour_name = tour.attributes.tour_name;
         var tour_session = this.model;
