@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require underscore
 //= require backbone
+//= require moment
 //= require gmaps/google
 //= require turbolinks
 //= require_tree ./models

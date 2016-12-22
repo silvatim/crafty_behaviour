@@ -3,11 +3,18 @@ body {
   list-style: none;
 }
 
+.wrapper2 {
+  padding-top: 200px;
+  font-family: "Montserrat";
+  text-align: center;
+  color: #232323; // almost black
+}
+
 #app {
   height: 100vh;
   width: 100vw;
   border: 1px solid black;
-  background-color: lightslategrey;
+  // background-color: lightslategrey;
   overflow: auto;
 }
 
@@ -17,9 +24,9 @@ body {
 display: block;
 border: 1px solid black;
 height: 100%;
-width: 60%;
+width: 50%;
 float: right;
-border-radius: 50%;
+border-radius: 5%;
 }
 
 #breweryIndexView {
