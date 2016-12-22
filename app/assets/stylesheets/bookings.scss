@@ -2,11 +2,29 @@
 .main {
     min-height: calc(100vh - 200px);
 }
+// --------------------------------------//
 
+.wrapper {
+  color: blue;
+}
 .rabbit {
   width: 300px;
   padding-top: 20px;
 }
+
+
+h1, h2, h3, p, label, input {
+  color: #191716;
+}
+
+.field {
+  color: #191716;
+}
+
+a {
+  font-size: 1.2em;
+}
+
 // ----------------            ------------------  //
 .wrapper {
     font-family: "Montserrat";
