@@ -14,17 +14,15 @@
   width: 100%;
   list-style: none;
   font-size: 1.3em;
-  // font-family: "Oswald";
   text-transform: uppercase;
   text-align: center;
 }
 
 #map {
   display: block;
-  height: 60%;
-  width: 80%;
+  height: 70%;
+  width: 100%;
   margin: auto;
-
 }
 
 #tourList li {
@@ -35,9 +33,9 @@
   margin-top: 20px;
   margin-right: 0.5%;
   margin-left: 0.5%;
+  margin-bottom: 0;
   display: inline-block;
   width: 24%;
-  // font-family: "Open Sans";
   font-weight: bold;
   font-size: 1.8em;
   background-color: #2B2118;
@@ -51,27 +49,32 @@
 }
 
 #breweryIndexView {
-  // border: 1px solid blue;
   float: left;
-  width: 50%;
+  width: 65%;
+}
+
+#breweryIndexView li {
+  font-family: "Lato";
+  font-weight: bold;
+  text-align: left;
+  margin-left: 50px;
 }
 
 #tourSessions {
-  // border: 1px solid blue;
   float: right;
-  width: 50%;
+  width: 35%;
+  min-height: 110px;
+  font-weight: bold;
+  font-family: "Lato";
 }
 
-.text_banner {
-	color:#fff;
-	font-weight: 800;
-	z-index: 10000;
-	position: absolute;
-	margin-left: 6em;
-  font-size: 6em;
-  padding-top: 60px;
-  text-transform: uppercase;
+#tourSessions p {
+  // color: #F7F3E3;
+  padding-top: 20px;
+  margin: 0;
+
 }
+
 
 #b {
   margin-top: 15%;
