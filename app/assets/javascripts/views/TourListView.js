@@ -24,7 +24,7 @@ app.TourListView = Backbone.View.extend({
 
         $("#tourSessions li").remove();
         $("#breweryIndexView li").remove();
-
+        $("#b").remove();
 
 
         var tour = this.model.attributes;

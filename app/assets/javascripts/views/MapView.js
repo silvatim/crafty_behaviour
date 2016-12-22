@@ -15,12 +15,14 @@ app.MapView = Backbone.View.extend({
         };
 
         map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 12,
+            zoom: 13,
             center: latLng
         });
 
         var image_marker = {
-            url: 'https://i.gyazo.com/c7acbbd4ab4d6e1574f5c2b0816762c3.png',
+            
+            url: 'https://i.gyazo.com/thumb/200/_eb58c8d0345b271c2da891461944b6cb-png.jpg',
+
             //   //        // This marker is 20 pixels wide by 32 pixels high.
             size: new google.maps.Size(20, 37),
             //   //        // The origin for this image is (0, 0).

@@ -6,14 +6,13 @@ app.InitializeView = Backbone.View.extend({
     render: function() {
 
 
-
         var initializeView = $("#initializeViewTemplate").html();
         this.$el.append(initializeView);
 
         var b = function($b, speed) {
             var beeWidth = $b.width();
 
-            $b.animate({ //animates the bee to the right side of the screen
+            $b.animate({ //animates the bear to the right side of the screen
                 "left": "90%"
             }, speed, function() { //when finished it goes back to the left side
                 $b.animate({

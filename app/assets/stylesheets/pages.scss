@@ -43,6 +43,12 @@
   color: #F7F3E3;
 }
 
+#tourList li:hover {
+  transition-delay: 50ms, 50ms;
+  background-color: #F7F3E3;
+  color: #2B2118;
+}
+
 #breweryIndexView {
   float: left;
   width: 65%;
@@ -72,5 +78,5 @@
 
 
 #b {
-  margin-top: 10%;
+  margin-top: 15%;
 }

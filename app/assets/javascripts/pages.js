@@ -1,6 +1,6 @@
 var app = app || {};
 
-$(document).ready(function (){
+$(document).on("ready turbolinks:load", function (){
 
 if($("#app").length === 0){
   return false;
