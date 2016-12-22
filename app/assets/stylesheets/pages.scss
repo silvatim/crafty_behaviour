@@ -16,26 +16,44 @@
 
 #map {
 display: block;
-height: 50%;
+height: 60%;
 width: 70%;
 margin: auto;
-}
+
 
 #breweryIndexView,
 #tourList,
 #tourSessions {
   display: block;
   // border: 1px solid red;
-  min-height: 150px;
 }
 
 
 #tourList {
   float: left;
-  width: 50%;
+  width: 100%;
+}
+
+#tourList li {
+  border: 3px solid #2B2118;
+  border-radius: 8px;
+  padding: 6px;
+  display: inline-block;
+  width: 25%;
 }
 
 #breweryIndexView {
-  float: right;
-  width: 50%;
+  font-size: 0.9em;
+}
+
+
+.text_banner {
+	color:#fff;
+	font-weight: 800;
+	z-index: 10000;
+	position: absolute;
+	margin-left: 6em;
+  font-size: 6em;
+  padding-top: 60px;
+  text-transform: uppercase;
 }
