@@ -7,7 +7,7 @@
     <% end %>
 
     <label class="amount">
-      <span>Amount: $5.00</span>
+      <span>Amount: $100.00</span>
     </label>
   </article>
 
@@ -15,5 +15,7 @@
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="A month's subscription"
           data-amount="500"
-          data-locale="auto"></script>
+          data-locale="auto"
+          data-image= "<%=image_path("hop.png")%>
+  </script>
 <% end %>
