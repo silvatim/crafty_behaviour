@@ -1,30 +1,19 @@
 // ------- sticky footer  ----------- //
-
 .main {
     min-height: calc(100vh - 320px);
 }
 
-.footer {
-    height: 80px;
-    background-color: #2B2118;
-}
-
-.footer p {
-    color: white;
-    padding: 4px;
-}
 // ----------------            ------------------  //
 .wrapper {
-    padding-top: 200px;
     font-family: "Montserrat";
     text-align: center;
     color: #232323; // almost black
 }
 
 .wrapper h1 {
-    font-weight: bold;
-    font-size: 4em;
-    padding-top: 10px;
+  padding-top: 60px;
+  font-weight: bold;
+  font-size: 4em;
 }
 
 

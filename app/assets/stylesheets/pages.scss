@@ -9,29 +9,50 @@
   list-style: none;
   font-size: 1.3em;
   font-family: "Oswald";
+  text-transform: uppercase;
   text-align: center;
 }
 
 #map {
-display: block;
-height: 60%;
-width: 70%;
-margin: auto;
+  display: block;
+  height: 60%;
+  width: 70%;
+  margin: auto;
 }
 
 #breweryIndexView,
 #tourList,
 #tourSessions {
-    display: block;
-
+  display: block;
+  // border: 1px solid red;
 }
+
 
 #tourList {
     float: left;
     width: 100%;
 }
 
+#tourList li {
+  border: 3px solid #2B2118;
+  border-radius: 8px;
+  padding: 6px;
+  display: inline-block;
+  width: 25%;
+}
+
 #breweryIndexView {
-    float: right;
-    width: 50%;
+  font-size: 0.9em;
+}
+
+
+.text_banner {
+	color:#fff;
+	font-weight: 800;
+	z-index: 10000;
+	position: absolute;
+	margin-left: 6em;
+  font-size: 6em;
+  padding-top: 60px;
+  text-transform: uppercase;
 }
