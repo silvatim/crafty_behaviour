@@ -20,7 +20,7 @@ app.MapView = Backbone.View.extend({
         });
 
         var image_marker = {
-            url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+            url: 'https://i.gyazo.com/thumb/200/_eb58c8d0345b271c2da891461944b6cb-png.jpg',
             //   //        // This marker is 20 pixels wide by 32 pixels high.
             size: new google.maps.Size(20, 32),
             //   //        // The origin for this image is (0, 0).
