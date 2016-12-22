@@ -55,7 +55,30 @@ ul#scene {
 .eagle{ top:100px; left:350px;}
 
 .vw{ top:550px; left:590px; }
-.hop{ top:690px; left:840px; }
+.hop{ top:690px;
+      left:840px;
+       cursor:pointer;
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+      transition: transform .8s ease-in-out;
+ }
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+.hop:hover {
+
+-webkit-animation-name: rotate;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+
+
 .hopon{ top:715px; left:940px; }
 
 .sign{ top:540px; left:510px; }
@@ -63,5 +86,7 @@ ul#scene {
 .leaves{ top:250px; left:0px; }
 
 .oceanblue{ left:500px; top:450px; }
-.swingsign{ left:700px; top:0px; }
+// .swingsign{ left:700px; top:0px; }
+
+
 
