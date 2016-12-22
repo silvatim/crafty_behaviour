@@ -14,7 +14,7 @@ app.TourSessionView = Backbone.View.extend({
         // console.log(dates.tour_date);
 
         this.$el.text(tour_name + ": " + date);
-        this.$el.prependTo("#tourSessions");
+        this.$el.appendTo("#tourSessions");
 
 
 
