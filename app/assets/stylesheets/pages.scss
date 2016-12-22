@@ -4,19 +4,21 @@
 // ---------------  CSS for backbone Views  ---------------  //
 
 #app {
-  padding-top: 200px;
+  // padding-top: 200px;
   height: 100vh;
   width: 100%;
   list-style: none;
   font-size: 1.3em;
   font-family: "Oswald";
+  text-transform: uppercase;
   text-align: center;
 }
 
 #map {
 display: block;
 height: 70%;
-width: 100%;
+width: 70%;
+margin: auto;
 }
 
 #breweryIndexView,
