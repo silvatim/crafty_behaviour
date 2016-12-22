@@ -4,13 +4,18 @@ app.AppView = Backbone.View.extend({
   el: "#app",
   render: function(){
 
-    var mapView = $("#mapViewTemplate").html();
-    this.$el.html(mapView);
+
     var tourView = $("#keyViewTemplate").html();
-    this.$el.prepend(tourView);
-    var sessionView = $("#tourDateTemplate").html();
-    this.$el.prepend(sessionView);
+    this.$el.append(tourView);
+    var mapView = $("#mapViewTemplate").html();
+    this.$el.append(mapView);
+
+
     var GmapView = $("#GmapView").html();
-    this.$el.prepend(GmapView);
+    this.$el.append(GmapView);
+
+    var sessionView = $("#tourDateTemplate").html();
+    this.$el.append(sessionView);
+
   }
 });
