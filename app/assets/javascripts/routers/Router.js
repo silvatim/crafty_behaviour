@@ -19,5 +19,15 @@ app.Router = Backbone.Router.extend({
             tourView.render();
         });
 
+        var initializeView = new app.InitializeView();
+        initializeView.render();
+
+        // var cityFringe = new app.TourListView({
+        //   model: app.tours.models[0]
+        // });
+        //
+        // cityFringe.render();
+        // cityFringe.showTourInfo();
+
     }
 });
