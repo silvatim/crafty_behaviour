@@ -1,60 +1,37 @@
 * { box-sizing: border-box; }
 
-body { list-style: none; }
-
-#app {
-  height: 100vh;
-  width: 100vw;
-  border: 1px solid black;
-  overflow: auto;
-}
-
 
 // ---------------  CSS for backbone Views  ---------------  //
-#map {
-display: block;
-border: 1px solid black;
-height: 100%;
-width: 80%;
-float: right;
+
+#app {
+  padding-top: 200px;
+  height: 100vh;
+  width: 100%;
+  list-style: none;
+  font-size: 1.2em;
 }
 
+#map {
+display: block;
+height: 50%;
+width: 100%;
+}
 
 #breweryIndexView,
 #tourList,
 #tourSessions {
   display: block;
-  border: 1px solid red;
-  background-color: gray;
-  color: white;
-  width: 300px;
-  height: 300px;
-
+  // border: 1px solid red;
+  min-height: 160px;
 }
 
-//
-// #breweryIndexView {
-//   display: block;
-//   border: 1px dashed black;
-//   width: 200px;
-//   height: 200px;
-//   margin-top: 10%;
-//   color: white;
-//   background-color: rgba(0,0,0,0.4);
-// }
-//
-// #tourList {
-//   display: block;
-//   border: 1px dashed black;
-//   width: 200px;
-//   color: white;
-//   background-color: rgba(0,0,0,0.4);
-// }
-//
-// #tourSessions {
-//   display: block;
-//   border: 1px dashed red;
-//   width: 200px;
-//   color: white;
-//   background-color: rgba(0,0,0,0.4);
-// }
+
+#tourList {
+  float: left;
+  width: 50%;
+}
+
+#breweryIndexView {
+  float: right;
+  width: 50%;
+}
