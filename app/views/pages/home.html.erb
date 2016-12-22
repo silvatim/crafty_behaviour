@@ -5,11 +5,11 @@
 			<div class="background"></div>
 		  </li>
 
-      <li class="layer" data-depth="0.00">
-        <div class="swingsign">
-        <%= link_to(image_tag('swingsignsmall.png'), '/app#') %>
-        </div>
-		  </li>
+      <!-- <li class="layer" data&#45;depth="0.00"> -->
+      <!--   <div class="swingsign"> -->
+      <!--   <#%= link_to(image_tag('swingsignsmall.png'), '/app#') %> -->
+      <!--   </div> -->
+		  <!-- </li> -->
 
       <li class="layer" data-depth="0.10">
 		  <div class="mountains">
@@ -39,12 +39,13 @@
 		  <div class="eagle">
         <%= image_tag('eagle.png') %>
       </div>
-
 		  </li>
+
 		  <li class="layer" data-depth="0.30">
 		  <div class="bigcloud">
         <%= image_tag('bigcloud.png') %>
       </div>
+
 		  </li>
 		  <li class="layer" data-depth="0.40">
 		  <div class="tlcloud">
@@ -96,6 +97,7 @@
       <li class="layer" data-depth="0.52">
         <div class="sign">
         <%= image_tag('sign.png') %>
+			</div>
 		  </li>
 
       <li class="layer" data-depth="0.60">
@@ -120,21 +122,25 @@
       <li class="layer" data-depth="0.80">
         <div class="road">
         <%= image_tag('roadfull.png') %>
+        </div>
 		  </li>
 
       <li class="layer" data-depth="1.20">
         <div class="vw">
         <%= image_tag('vw.png') %>
+				</div>
 		  </li>
 
       <li class="layer" data-depth="1.21">
         <div class="hop">
-        <%= image_tag('hop.png') %>
+      <%= link_to(image_tag('hop.png'), '/app#') %>
+			</div>
 		  </li>
 
       <li class="layer" data-depth="1.21">
         <div class="hopon">
         <%= image_tag('hopon.png') %>
+			</div>
 		  </li>
 
 
@@ -151,4 +157,5 @@
 	$(function(){
 		$('#scene').parallax();
 	});
+
 </script>

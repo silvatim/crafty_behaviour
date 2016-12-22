@@ -14,17 +14,17 @@
 
   <div class="field">
     <%= f.label :name_last %>
-    <%= f.text_field :name_last %>
+    <%= f.text_field :name_last, :required => true %>
   </div>
   <br>
   <div class="field">
     <%= f.label :name_first %>
-    <%= f.text_field :name_first %>
+    <%= f.text_field :name_first, :required => true %>
   </div>
   <br>
   <div class="field">
     <%= f.label :date %>
-    <%= f.datetime_select :date %>
+    <%= f.datetime_select :date, :required => true%>
   </div>
   <br>
   <!-- <div class="field">
@@ -33,7 +33,7 @@
   </div> -->
   <div class="field">
     <%= f.label :number_people %>
-    <%= f.number_field :number_people %>
+    <%= f.number_field :number_people, :required => true %>
   </div>
   <br>
   <br>
