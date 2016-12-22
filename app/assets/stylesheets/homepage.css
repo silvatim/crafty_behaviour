@@ -8,8 +8,8 @@ ul#scene {
 }
 
 .container {
-  width:100%;
-  height:900px;
+  width:100vw;
+  height:100vh;
   overflow:hidden;
   position:relative;
   background:#000;
@@ -17,8 +17,8 @@ ul#scene {
 
 .background {
   background: url('blue.jpg');
-  width:100%;
-  height:900px;
+  width:100vw;
+  height:100vh;
   left:0;
   top:0;
   background-size:cover;
@@ -227,8 +227,3 @@ ul#scene {
 	}
 
 }
-
-
-
-
-
