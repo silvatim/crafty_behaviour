@@ -4,7 +4,7 @@
 
 <script type="text/javascript">
 
-var handler = Gmaps.build('Google');
+    var handler = Gmaps.build('Google');
     handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
     markers = handler.addMarkers(<%=raw @hash.to_json %>);
     handler.bounds.extendWith(markers);

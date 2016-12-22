@@ -10,6 +10,16 @@ class ToursController < ApplicationController
   # GET /tours/1
   # GET /tours/1.json
   def show
+    @hash = Gmaps4rails.build_markers(@tour.breweries) do |brewery, marker|
+      marker.lat brewery.latitude
+      marker.lng brewery.longitude
+      marker.picture({
+      :picture => view_context.image_path('beer11.png'),
+      :width => 32,
+      :height => 32
+      })
+      marker.infowindow render_to_string( :partial => 'infowindow', locals:{ brewery: brewery } )
+   end
   end
 
   # GET /tours/new
