@@ -1,6 +1,13 @@
 * {
     box-sizing: border-box;
 }
+
+.chmiel {
+  position: absolute;
+  top: 500px;
+  left: 42%;
+  width: 300px;
+}
 // ---------------  CSS for backbone Views  ---------------  //
 #app {
   padding-top: 200px;
@@ -8,7 +15,7 @@
   width: 100%;
   list-style: none;
   font-size: 1.3em;
-  font-family: "Oswald";
+  // font-family: "Oswald";
   text-transform: uppercase;
   text-align: center;
 }
@@ -21,15 +28,9 @@
 
 }
 
-// #breweryIndexView,
-// #tourList,
-// #tourSessions {
-//   display: block;
-// }
-
 #tourList li {
   width: 100%;
-  border: 1px solid #2B2118;
+  border: 1px solid #191716;
   border-radius: 4px;
   padding: 20px;
   margin-top: 20px;
@@ -37,8 +38,11 @@
   margin-left: 0.5%;
   display: inline-block;
   width: 24%;
-  font-family: "Open Sans";
+  // font-family: "Open Sans";
   font-weight: bold;
+  font-size: 1.8em;
+  background-color: #2B2118;
+  color: #F7F3E3;
 }
 
 #breweryIndexView {

@@ -4,7 +4,10 @@ $(document).ready(function (){
 
 if($("#app").length === 0){
   return false;
+
 }
+
+
 
 
   app.tours = new app.Tours();
@@ -14,5 +17,7 @@ if($("#app").length === 0){
     Backbone.history.start();
 
   });
+
+
 
 });
