@@ -18,31 +18,38 @@
   height: 60%;
   width: 70%;
   margin: auto;
+
 }
 
 #breweryIndexView,
 #tourList,
 #tourSessions {
   display: block;
-  // border: 1px solid red;
 }
 
 
 #tourList {
-    float: left;
     width: 100%;
 }
 
 #tourList li {
   border: 3px solid #2B2118;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 6px;
   display: inline-block;
   width: 25%;
 }
 
 #breweryIndexView {
-  font-size: 0.9em;
+  border: 1px solid blue;
+  float: left;
+  width: 50%;
+}
+
+#tourSessions {
+  border: 1px solid blue;
+  float: right;
+  width: 50%;
 }
 
 

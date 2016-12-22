@@ -9,15 +9,24 @@ ul#scene {
 }
 
 .container {
+<<<<<<< HEAD:app/assets/stylesheets/homepage.scss
   width:100%;
   height:100%;
+=======
+  width:100vw;
+  height:100vh;
+>>>>>>> c980435f079137bc5395d6bb1b3c82bfab6f52fc:app/assets/stylesheets/homepage.scss
   overflow:hidden;
   position:relative;
   background:#000;
 }
 
 .background {
+<<<<<<< HEAD:app/assets/stylesheets/homepage.scss
   background:image-url('blue.jpg');
+=======
+  background: image-url('blue.jpg');
+>>>>>>> c980435f079137bc5395d6bb1b3c82bfab6f52fc:app/assets/stylesheets/homepage.scss
   width:100%;
   height:900px;
   left:0;
@@ -190,3 +199,44 @@ ul#scene {
  transform: rotate(85deg);
 }
 
+<<<<<<< HEAD:app/assets/stylesheets/homepage.scss
+=======
+.vw.animate {
+	animation-name: bounce;
+	animation-duration: 10s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-delay: 0;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+}
+
+@keyframes bounce {
+
+	0% {
+		bottom: 0;
+		left: 340px;
+		background: #f00;
+	}
+
+	33% {
+		bottom: 340px;
+		left: 340px;
+		background: #ffd630;
+	}
+
+	66% {
+		bottom: 340px;
+		left: 40px;
+		background: #ffd630;
+	}
+
+	100% {
+		bottom: 0;
+		left: 40px;
+		background: #f00;
+	}
+
+}
+>>>>>>> c980435f079137bc5395d6bb1b3c82bfab6f52fc:app/assets/stylesheets/homepage.scss

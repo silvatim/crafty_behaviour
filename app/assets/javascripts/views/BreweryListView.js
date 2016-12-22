@@ -11,7 +11,7 @@ app.BreweryListView = Backbone.View.extend({
         // the brewery variable is an object, includes all the lat and long for the brewery, etc.
         var name = brewery.brewery_name;
 
-        this.$el.text("");
+        // this.$el.text("");
         this.$el.text(name);
         this.$el.prependTo("#breweryIndexView");
 
