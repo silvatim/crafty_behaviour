@@ -69,14 +69,31 @@ ul#scene {
         -webkit-transform: rotate(360deg);
     }
 }
+
+
+
 .hop:hover {
 
 -webkit-animation-name: rotate;
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 1.5s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 }
 
+#h{
+     top: 340px;
+     left: 120px;
+      cursor:pointer;
+      -webkit-transition: -webkit-transform 1.5s ease-in-out;
+      transition: transform 1.55s ease-in-out;
+ }
+#h:hover {
+
+-webkit-animation-name: rotate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
 
 
 .hopon{ top:715px; left:940px; }
