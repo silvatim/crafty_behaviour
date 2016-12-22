@@ -18,7 +18,6 @@
 //= require backbone
 //= require moment
 //= require gmaps/google
-//= require turbolinks
 //= require_tree ./models
 //= require_tree ./collections
 //= require_tree ./views
