@@ -1,12 +1,11 @@
 * {
     box-sizing: border-box;
 }
-
-.chmiel {
-  position: absolute;
-  top: 500px;
-  left: 42%;
-  width: 300px;
+#appViewHeading {
+  font-size: 3em;
+  font-weight: bold;
+  color: #191716;
+  font-family: "Open Sans";
 }
 // ---------------  CSS for backbone Views  ---------------  //
 #app {
@@ -46,13 +45,13 @@
 }
 
 #breweryIndexView {
-  border: 1px solid blue;
+  // border: 1px solid blue;
   float: left;
   width: 50%;
 }
 
 #tourSessions {
-  border: 1px solid blue;
+  // border: 1px solid blue;
   float: right;
   width: 50%;
 }
